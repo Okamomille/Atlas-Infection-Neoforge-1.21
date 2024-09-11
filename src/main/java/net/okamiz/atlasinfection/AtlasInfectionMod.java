@@ -1,5 +1,7 @@
 package net.okamiz.atlasinfection;
 
+import net.okamiz.atlasinfection.item.ModItemGroup;
+import net.okamiz.atlasinfection.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +36,11 @@ public class AtlasInfectionMod {
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ModItemGroup.register(modEventBus);
+
+
+        ModItems.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
