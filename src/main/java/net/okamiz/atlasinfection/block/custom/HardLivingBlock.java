@@ -4,14 +4,14 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.okamiz.atlasinfection.block.ModBlocks;
 import net.okamiz.atlasinfection.util.ModTags;
 
 
-public class LivingBlock extends Block {
-    public LivingBlock(Properties properties) {
+public class HardLivingBlock extends Block {
+    public HardLivingBlock(Properties properties) {
         super(properties);
     }
 
@@ -25,7 +25,7 @@ public class LivingBlock extends Block {
 
 
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             BlockPos blockpos = pos.offset(random.nextIntBetweenInclusive(-1,1), random.nextIntBetweenInclusive(-1,1), random.nextIntBetweenInclusive(-1,1));
 
             if (level.getBlockState(blockpos).is(BlockTags.FLOWERS) || level.getBlockState(blockpos).is(Blocks.SHORT_GRASS)

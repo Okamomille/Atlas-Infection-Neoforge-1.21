@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.atlasinfection.AtlasInfectionMod;
 import net.okamiz.atlasinfection.block.custom.AtlasHeart;
+import net.okamiz.atlasinfection.block.custom.HardLivingBlock;
 import net.okamiz.atlasinfection.block.custom.LivingBlock;
 import net.okamiz.atlasinfection.item.ModItems;
 
@@ -24,6 +25,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(0.8F)));
     public static final DeferredBlock<Block> LIVING_BLOCK = registerBlock("living_block",
             () -> new LivingBlock(BlockBehaviour.Properties.of().strength(0.8F).randomTicks().sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> HARD_LIVING_BLOCK = registerBlock("hard_living_block",
+            () -> new HardLivingBlock(BlockBehaviour.Properties.of().strength(2.8F).randomTicks().sound(SoundType.WART_BLOCK)));
     public static final DeferredBlock<Block> ATLAS_HEART = registerBlock("atlas_heart",
             () -> new AtlasHeart(BlockBehaviour.Properties.of().strength(0.8F)));
 

@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.PROTECTED_QUARTZ_BLOCK);
         blockWithItem(ModBlocks.LIVING_BLOCK);
+        blockWithItem(ModBlocks.HARD_LIVING_BLOCK);
         blockWithItem(ModBlocks.ATLAS_HEART);
     }
 

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:air",
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:vine",
+    "atlasinfection:atlas_heart",
+    "atlasinfection:hard_living_block",
+    "atlasinfection:protected_quartz_block"
+  ]
+}

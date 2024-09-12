@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "atlasinfection:living_block"
+              "name": "atlasinfection:hard_living_block"
             },
             {
               "type": "minecraft:item",
@@ -35,8 +35,8 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 2.0,
-                    "min": 1.0
+                    "max": 5.0,
+                    "min": 2.0
                   },
                   "function": "minecraft:set_count"
                 },
@@ -57,5 +57,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "atlasinfection:blocks/living_block"
+  "random_sequence": "atlasinfection:blocks/hard_living_block"
 }
