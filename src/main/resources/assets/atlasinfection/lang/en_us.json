@@ -5,5 +5,7 @@
   "item.atlasinfection.infected_powder": "Infected Powder",
 
 
-  "block.atlasinfection.protected_quartz_block": "Protected Quartz Block"
+  "block.atlasinfection.protected_quartz_block": "Protected Quartz Block",
+  "block.atlasinfection.atlas_heart": "Atlas Heart",
+  "block.atlasinfection.living_block": "Living Block"
 }

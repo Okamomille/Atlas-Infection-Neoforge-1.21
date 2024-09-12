@@ -3,11 +3,16 @@ package net.okamiz.atlasinfection.block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.atlasinfection.AtlasInfectionMod;
+import net.okamiz.atlasinfection.block.custom.AtlasHeart;
+import net.okamiz.atlasinfection.block.custom.LivingBlock;
 import net.okamiz.atlasinfection.item.ModItems;
 
 import java.util.function.Supplier;
@@ -18,7 +23,11 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> PROTECTED_QUARTZ_BLOCK = registerBlock("protected_quartz_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(0.8F)));
+    public static final DeferredBlock<Block> LIVING_BLOCK = registerBlock("living_block",
+            () -> new LivingBlock(BlockBehaviour.Properties.of().strength(0.8F).randomTicks().sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> ATLAS_HEART = registerBlock("atlas_heart",
+            () -> new AtlasHeart(BlockBehaviour.Properties.of().strength(0.8F)));
 
 
 

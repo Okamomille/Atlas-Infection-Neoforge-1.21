@@ -21,5 +21,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.LIVING_BLOCK.get());
     }
 }
