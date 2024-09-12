@@ -6,7 +6,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.okamiz.atlasinfection.block.ModBlocks;
 import net.okamiz.atlasinfection.util.ModTags;
 
 
