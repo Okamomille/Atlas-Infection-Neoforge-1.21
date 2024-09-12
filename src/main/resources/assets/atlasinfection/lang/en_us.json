@@ -1,5 +1,9 @@
 {
   "itemgroup.atlasinfection.atlas_infection_tab": "Atlas Infection",
 
-  "item.atlasinfection.infected_powder": "Infected Powder"
+
+  "item.atlasinfection.infected_powder": "Infected Powder",
+
+
+  "block.atlasinfection.protected_quartz_block": "Protected Quartz Block"
 }

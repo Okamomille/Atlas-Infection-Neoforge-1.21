@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.okamiz.atlasinfection.AtlasInfectionMod;
+import net.okamiz.atlasinfection.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -20,6 +21,10 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.INFECTED_POWDER.get()))
                     .displayItems((pParameters, output) -> {
                         output.accept(ModItems.INFECTED_POWDER);
+
+
+
+                        output.accept(ModBlocks.PROTECTED_QUARTZ_BLOCK);
                     })
                     .build());
 
