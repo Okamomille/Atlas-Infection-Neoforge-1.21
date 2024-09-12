@@ -28,7 +28,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HARD_LIVING_BLOCK = registerBlock("hard_living_block",
             () -> new HardLivingBlock(BlockBehaviour.Properties.of().strength(2.8F).randomTicks().sound(SoundType.WART_BLOCK)));
     public static final DeferredBlock<Block> ATLAS_HEART = registerBlock("atlas_heart",
-            () -> new AtlasHeart(BlockBehaviour.Properties.of().strength(0.8F)));
+            () -> new AtlasHeart(BlockBehaviour.Properties.of().strength(0.8F).randomTicks()));
 
 
 

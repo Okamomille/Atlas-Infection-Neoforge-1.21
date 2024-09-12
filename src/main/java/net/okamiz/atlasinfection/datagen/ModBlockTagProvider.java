@@ -23,6 +23,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         this.tag(ModTags.Blocks.NON_INFECTABLE_BLOCKS)
                 .add(Blocks.AIR)
+                .add(Blocks.BARRIER)
+                .add(Blocks.STRUCTURE_VOID)
+                .add(Blocks.BEDROCK)
+                .add(Blocks.OBSIDIAN)
                 .add(Blocks.SHORT_GRASS)
                 .add(Blocks.TALL_GRASS)
                 .add(Blocks.VINE)
