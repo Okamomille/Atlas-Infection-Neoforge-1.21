@@ -10,8 +10,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.okamiz.atlasinfection.block.ModBlocks;
-import net.okamiz.atlasinfection.item.ModItems;
-import net.okamiz.atlasinfection.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 

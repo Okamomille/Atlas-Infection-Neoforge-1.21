@@ -34,14 +34,19 @@ public class AtlasHeart extends Block {
             BlockPos blockpos = pos.offset(random.nextIntBetweenInclusive(-2,2), random.nextIntBetweenInclusive(-2,2), random.nextIntBetweenInclusive(-2,2));
 
             if (level.getBlockState(blockpos).is(BlockTags.FLOWERS) || level.getBlockState(blockpos).is(Blocks.SHORT_GRASS)
-                    || level.getBlockState(blockpos).is(Blocks.TALL_GRASS) || level.getBlockState(blockpos).is(Blocks.SNOW)) {
-                level.setBlockAndUpdate(blockpos, Blocks.AIR.defaultBlockState());
+                    || level.getBlockState(blockpos).is(Blocks.TALL_GRASS)) {
+                level.setBlockAndUpdate(blockpos, ModBlocks.LIVING_ROOTS.get().defaultBlockState());
             }
 
             if (level.getBlockState(blockpos.above()).is(BlockTags.FLOWERS) || level.getBlockState(blockpos.above()).is(Blocks.SHORT_GRASS)
-                    || level.getBlockState(blockpos.above()).is(Blocks.TALL_GRASS) || level.getBlockState(blockpos.above()).is(Blocks.SNOW)) {
+                    || level.getBlockState(blockpos.above()).is(Blocks.TALL_GRASS)) {
+                level.setBlockAndUpdate(blockpos.above(), ModBlocks.LIVING_ROOTS.get().defaultBlockState());
+            }
 
+            if(level.getBlockState(blockpos.above()).is(Blocks.SNOW)){
                 level.setBlockAndUpdate(blockpos.above(), Blocks.AIR.defaultBlockState());
+            }else if(level.getBlockState(blockpos).is(Blocks.SNOW)){
+                level.setBlockAndUpdate(blockpos, Blocks.AIR.defaultBlockState());
             }
 
             if (!level.getBlockState(blockpos).is(ModTags.Blocks.NON_INFECTABLE_BLOCKS)) {

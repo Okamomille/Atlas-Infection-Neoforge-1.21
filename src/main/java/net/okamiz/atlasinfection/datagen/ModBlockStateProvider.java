@@ -20,6 +20,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.HARD_LIVING_BLOCK);
         blockWithItem(ModBlocks.ATLAS_HEART);
 
+        simpleBlockWithItem(ModBlocks.LIVING_LEAVES.get(),
+                models().cubeAll(blockTexture(ModBlocks.LIVING_LEAVES.get()).getPath(), blockTexture(ModBlocks.LIVING_LEAVES.get())).renderType("cutout"));
+
         simpleBlock(ModBlocks.LIVING_ROOTS.get(),
                 models().cross(blockTexture(ModBlocks.LIVING_ROOTS.get()).getPath(), blockTexture(ModBlocks.LIVING_ROOTS.get())).renderType("cutout"));
     }
@@ -27,4 +30,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(DeferredBlock<Block> deferredBlock){
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
+
+
 }

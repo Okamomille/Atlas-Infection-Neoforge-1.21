@@ -30,6 +30,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.PROTECTED_QUARTZ_BLOCK.get());
         dropSelf(ModBlocks.ATLAS_HEART.get());
+        dropSelf(ModBlocks.LIVING_LEAVES.get());
 
         this.add(ModBlocks.LIVING_BLOCK.get(),
                 block -> createMultipleOreDrops(ModBlocks.LIVING_BLOCK.get(), ModItems.INFECTED_POWDER.get(), 1, 2));
