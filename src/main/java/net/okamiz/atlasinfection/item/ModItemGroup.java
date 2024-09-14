@@ -26,6 +26,8 @@ public class ModItemGroup {
 
                         output.accept(ModBlocks.PROTECTED_QUARTZ_BLOCK);
                         output.accept(ModBlocks.ATLAS_HEART);
+
+                        output.accept(ModBlocks.LIVING_ROOTS);
                         output.accept(ModBlocks.LIVING_BLOCK);
                         output.accept(ModBlocks.HARD_LIVING_BLOCK);
                     })

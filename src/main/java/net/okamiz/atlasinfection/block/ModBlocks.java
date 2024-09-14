@@ -3,6 +3,7 @@ package net.okamiz.atlasinfection.block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -12,6 +13,7 @@ import net.okamiz.atlasinfection.AtlasInfectionMod;
 import net.okamiz.atlasinfection.block.custom.AtlasHeart;
 import net.okamiz.atlasinfection.block.custom.HardLivingBlock;
 import net.okamiz.atlasinfection.block.custom.LivingBlock;
+import net.okamiz.atlasinfection.block.custom.LivingPlants;
 import net.okamiz.atlasinfection.item.ModItems;
 
 import java.util.function.Supplier;
@@ -22,13 +24,17 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> PROTECTED_QUARTZ_BLOCK = registerBlock("protected_quartz_block",
-            () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(0.8F)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_BLOCK)));
     public static final DeferredBlock<Block> LIVING_BLOCK = registerBlock("living_block",
             () -> new LivingBlock(BlockBehaviour.Properties.of().strength(0.8F).randomTicks().sound(SoundType.WART_BLOCK)));
     public static final DeferredBlock<Block> HARD_LIVING_BLOCK = registerBlock("hard_living_block",
             () -> new HardLivingBlock(BlockBehaviour.Properties.of().strength(2.8F).randomTicks().sound(SoundType.WART_BLOCK)));
     public static final DeferredBlock<Block> ATLAS_HEART = registerBlock("atlas_heart",
-            () -> new AtlasHeart(BlockBehaviour.Properties.of().strength(0.8F).randomTicks()));
+            () -> new AtlasHeart(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).randomTicks()));
+
+
+    public static final DeferredBlock<Block> LIVING_ROOTS = registerBlock("living_roots",
+            () -> new LivingPlants(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS)));
 
 
 

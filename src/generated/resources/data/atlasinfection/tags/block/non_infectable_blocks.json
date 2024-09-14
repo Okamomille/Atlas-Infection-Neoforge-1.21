@@ -1,11 +1,16 @@
 {
   "values": [
     "minecraft:air",
+    "minecraft:barrier",
+    "minecraft:structure_void",
+    "minecraft:bedrock",
+    "minecraft:obsidian",
     "minecraft:short_grass",
     "minecraft:tall_grass",
     "minecraft:vine",
     "atlasinfection:atlas_heart",
     "atlasinfection:hard_living_block",
+    "atlasinfection:living_roots",
     "atlasinfection:protected_quartz_block"
   ]
 }

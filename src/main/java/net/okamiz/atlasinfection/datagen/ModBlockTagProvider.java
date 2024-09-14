@@ -32,11 +32,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.VINE)
                 .add(ModBlocks.ATLAS_HEART.get())
                 .add(ModBlocks.HARD_LIVING_BLOCK.get())
+                .add(ModBlocks.LIVING_ROOTS.get())
                 .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get());
+
+        this.tag(ModTags.Blocks.LIVING_BLOCKS)
+                .add(ModBlocks.LIVING_BLOCK.get())
+                .add(ModBlocks.HARD_LIVING_BLOCK.get());
 
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-            .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get());
+            .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get())
+            .add(ModBlocks.ATLAS_HEART.get());
 
 
 

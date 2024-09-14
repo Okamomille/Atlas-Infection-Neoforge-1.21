@@ -1,11 +1,13 @@
-// 1.21.1	2024-09-12T19:01:43.3212095	Block States: atlasinfection
+// 1.21.1	2024-09-13T21:30:06.6572517	Block States: atlasinfection
 469cce98cd03fd0758cf3f016f5db244a7f33617 assets/atlasinfection/blockstates/atlas_heart.json
 c46a17d9dc699a0ca49ddfa7d32b5a5c660e7666 assets/atlasinfection/blockstates/hard_living_block.json
 0eaa9aba9fd608a28bbb6ac9d21ef4cb6337e9a2 assets/atlasinfection/blockstates/living_block.json
+d7832a563f6fa5348d90cab46d9b657d3d9a1a64 assets/atlasinfection/blockstates/living_roots.json
 3807ccc51dbadfaf18e87141a6154c10f4159638 assets/atlasinfection/blockstates/protected_quartz_block.json
 32d2418100ab80d478e908f6c243758fe0fb0c2c assets/atlasinfection/models/block/atlas_heart.json
 58b8013038e0d6386cd1246ad545c62d123c7cf7 assets/atlasinfection/models/block/hard_living_block.json
 a40656fbf19a2cf7dfb192a2c5fd412c61954c3b assets/atlasinfection/models/block/living_block.json
+dde9975420da1049cd26204190a873f1c1cc52e7 assets/atlasinfection/models/block/living_roots.json
 636bffc7076db933c7eb2731eb1ff80b8ae77860 assets/atlasinfection/models/block/protected_quartz_block.json
 964e8fd8517774c438da2e677438bb1239af8412 assets/atlasinfection/models/item/atlas_heart.json
 4ec7592df730783ce8da76ec844d0de97c5aec18 assets/atlasinfection/models/item/hard_living_block.json

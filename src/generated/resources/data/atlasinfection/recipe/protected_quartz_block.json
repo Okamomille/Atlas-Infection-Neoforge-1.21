@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "E": {
+      "item": "minecraft:honeycomb"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "QQQ",
+    "QEQ",
+    "QQQ"
+  ],
+  "result": {
+    "count": 8,
+    "id": "atlasinfection:protected_quartz_block"
+  }
+}

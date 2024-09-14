@@ -36,6 +36,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.HARD_LIVING_BLOCK.get(),
                 block -> createMultipleOreDrops(ModBlocks.HARD_LIVING_BLOCK.get(), ModItems.INFECTED_POWDER.get(), 2, 5));
 
+        dropOther(ModBlocks.LIVING_ROOTS.get(), ModItems.INFECTED_POWDER);
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {

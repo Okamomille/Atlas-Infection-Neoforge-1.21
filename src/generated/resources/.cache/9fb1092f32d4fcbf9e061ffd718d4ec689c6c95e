@@ -1,1 +1,5 @@
-// 1.21.1	2024-09-12T17:13:52.4994498	Recipes
+// 1.21.1	2024-09-14T11:06:47.1095573	Recipes
+7a0e6751a4df28f3b2ea0d62e79b0403ace1565b data/atlasinfection/advancement/recipes/building_blocks/protected_quartz_block.json
+1d9c735c076dc84bb4b953410d263dc6e5f0b98b data/atlasinfection/advancement/recipes/misc/atlas_heart.json
+423c1fd5a6dd69de89c10687903bacc5c3da841f data/atlasinfection/recipe/atlas_heart.json
+4d13c960092b0cffa64f929752a312122e47e088 data/atlasinfection/recipe/protected_quartz_block.json

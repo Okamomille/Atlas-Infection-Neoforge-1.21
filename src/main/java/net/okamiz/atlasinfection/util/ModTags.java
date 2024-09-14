@@ -13,6 +13,7 @@ public class ModTags {
     public static class Blocks{
 
         public static final TagKey<Block> NON_INFECTABLE_BLOCKS = createTag("non_infectable_blocks");
+        public static final TagKey<Block> LIVING_BLOCKS = createTag("living_blocks");
 
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(AtlasInfectionMod.MOD_ID, name));

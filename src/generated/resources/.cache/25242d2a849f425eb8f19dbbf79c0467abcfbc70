@@ -1,4 +1,5 @@
-// 1.21.1	2024-09-12T19:01:43.3232089	Tags for minecraft:block mod id atlasinfection
-4ad8e3ecdfe9be90aa6a4e155a8e52efc1522517 data/atlasinfection/tags/block/non_infectable_blocks.json
+// 1.21.1	2024-09-14T11:06:32.8449136	Tags for minecraft:block mod id atlasinfection
+674e41ac19f93967bfc352e278294594a4d6e1d9 data/atlasinfection/tags/block/living_blocks.json
+f8645f8a20a009f9f3a21e173e868f529efbb321 data/atlasinfection/tags/block/non_infectable_blocks.json
 674e41ac19f93967bfc352e278294594a4d6e1d9 data/minecraft/tags/block/mineable/hoe.json
-4a088adef4ceb17de8aff5878736204051d70e95 data/minecraft/tags/block/mineable/pickaxe.json
+ea36274dc68b33380a1e0fa2d963d96c1bf59895 data/minecraft/tags/block/mineable/pickaxe.json
