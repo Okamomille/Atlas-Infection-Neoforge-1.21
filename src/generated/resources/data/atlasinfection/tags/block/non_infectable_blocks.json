@@ -6,12 +6,19 @@
     "minecraft:bedrock",
     "minecraft:obsidian",
     "minecraft:short_grass",
+    "minecraft:bamboo",
+    "minecraft:bamboo_sapling",
     "minecraft:tall_grass",
-    "minecraft:vine",
     "atlasinfection:atlas_heart",
     "atlasinfection:hard_living_block",
     "atlasinfection:living_roots",
+    "atlasinfection:living_flowers",
     "atlasinfection:living_leaves",
+    "atlasinfection:living_log",
+    "atlasinfection:living_wood",
+    "atlasinfection:living_planks",
+    "atlasinfection:stripped_living_log",
+    "atlasinfection:stripped_living_wood",
     "atlasinfection:protected_quartz_block"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "atlasinfection:block/stripped_living_log",
+    "side": "atlasinfection:block/stripped_living_log"
+  }
+}

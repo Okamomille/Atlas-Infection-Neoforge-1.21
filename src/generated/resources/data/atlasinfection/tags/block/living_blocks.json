@@ -2,6 +2,11 @@
   "values": [
     "atlasinfection:living_block",
     "atlasinfection:living_leaves",
-    "atlasinfection:hard_living_block"
+    "atlasinfection:hard_living_block",
+    "atlasinfection:living_log",
+    "atlasinfection:living_wood",
+    "atlasinfection:living_planks",
+    "atlasinfection:stripped_living_log",
+    "atlasinfection:stripped_living_wood"
   ]
 }

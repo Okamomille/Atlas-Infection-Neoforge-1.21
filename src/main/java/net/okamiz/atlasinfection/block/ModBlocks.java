@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -36,12 +37,26 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> LIVING_LEAVES = registerBlock("living_leaves",
             () -> new LivingLeaves(BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_LEAVES).sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> LIVING_LOG = registerBlock("living_log",
+            () -> new ModLogsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> LIVING_WOOD = registerBlock("living_wood",
+            () -> new ModLogsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> STRIPPED_LIVING_LOG = registerBlock("stripped_living_log",
+            () -> new ModLogsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WART_BLOCK)));
+    public static final DeferredBlock<Block> STRIPPED_LIVING_WOOD = registerBlock("stripped_living_wood",
+            () -> new ModLogsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WART_BLOCK)));
+
+    public static final DeferredBlock<Block> LIVING_PLANKS = registerBlock("living_planks",
+            () -> new LivingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.WART_BLOCK)));
 
 
     // LIVING PLANTS ----------------------------
 
     public static final DeferredBlock<Block> LIVING_ROOTS = registerBlock("living_roots",
             () -> new LivingPlants(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS)));
+
+    public static final DeferredBlock<Block> LIVING_FLOWERS = registerBlock("living_flowers",
+            () -> new LivingFlowersBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS)));
 
 
 

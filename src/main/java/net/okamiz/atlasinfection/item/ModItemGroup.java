@@ -28,8 +28,16 @@ public class ModItemGroup {
                         output.accept(ModBlocks.ATLAS_HEART);
 
                         output.accept(ModBlocks.LIVING_ROOTS);
+                        output.accept(ModBlocks.LIVING_FLOWERS);
+
                         output.accept(ModBlocks.LIVING_BLOCK);
                         output.accept(ModBlocks.HARD_LIVING_BLOCK);
+                        output.accept(ModBlocks.LIVING_LEAVES);
+                        output.accept(ModBlocks.LIVING_LOG);
+                        output.accept(ModBlocks.LIVING_WOOD);
+                        output.accept(ModBlocks.STRIPPED_LIVING_LOG);
+                        output.accept(ModBlocks.STRIPPED_LIVING_WOOD);
+                        output.accept(ModBlocks.LIVING_PLANKS);
                     })
                     .build());
 

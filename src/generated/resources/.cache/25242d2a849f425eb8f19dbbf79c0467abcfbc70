@@ -1,6 +1,11 @@
-// 1.21.1	2024-09-14T16:14:03.139165	Tags for minecraft:block mod id atlasinfection
-a6575a83ce3fbd6a7a9060ce68957bd7517dbbbc data/atlasinfection/tags/block/living_blocks.json
-1a228941ea8019df404b0a32e5e7f0bcb36d7b4f data/atlasinfection/tags/block/non_infectable_blocks.json
+// 1.21.1	2024-09-16T16:29:10.9333541	Tags for minecraft:block mod id atlasinfection
+b660c5f28290f7b12e3d86f63c1c83ab52d94ba2 data/atlasinfection/tags/block/is_mass_blocks_vertical.json
+4224e828159aae7eb9c3397fc139ae4f17d96b30 data/atlasinfection/tags/block/living_blocks.json
+37af8b979f31cd3c8c0d6df134cbf894aaa51cab data/atlasinfection/tags/block/living_flowers_plantable.json
+905dfebdf738e6ad696475ee1164373c5ca29e46 data/atlasinfection/tags/block/non_infectable_blocks.json
 96ebd7dd21535f0f4f4709d9563eddce730ccc65 data/minecraft/tags/block/leaves.json
+90c8eebb69ce3e896be2cba5e3494881a4d9374e data/minecraft/tags/block/logs.json
+11cfbd7fcf9b5c82d85518973a98bc4142c659c1 data/minecraft/tags/block/mineable/axe.json
 674e41ac19f93967bfc352e278294594a4d6e1d9 data/minecraft/tags/block/mineable/hoe.json
 ea36274dc68b33380a1e0fa2d963d96c1bf59895 data/minecraft/tags/block/mineable/pickaxe.json
+1446d9de64431910e14d02f7fc233e457c6c69ee data/minecraft/tags/block/planks.json

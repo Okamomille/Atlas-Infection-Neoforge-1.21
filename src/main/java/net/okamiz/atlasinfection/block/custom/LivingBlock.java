@@ -25,7 +25,7 @@ public class LivingBlock extends LivingMechanicBlock {
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
 
         for (int i = 0; i < 4; i++) {
-            propagatethisBlock(state, level, pos, random);
+            propagateLivingBlock(state, level, pos, random);
         }
 
     }

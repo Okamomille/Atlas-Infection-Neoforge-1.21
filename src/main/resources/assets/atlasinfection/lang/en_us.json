@@ -9,7 +9,14 @@
   "block.atlasinfection.atlas_heart": "Atlas Heart",
 
   "block.atlasinfection.living_roots": "Living Roots",
+  "block.atlasinfection.living_flowers": "Living Flowers",
+
   "block.atlasinfection.living_leaves": "Living Leaves",
+  "block.atlasinfection.living_log": "Living Log",
+  "block.atlasinfection.living_wood": "Living Wood",
+  "block.atlasinfection.stripped_living_log": "Stripped Living Log",
+  "block.atlasinfection.stripped_living_wood": "Stripped Living Wood",
+  "block.atlasinfection.living_planks": "Stripped Living Planks",
   "block.atlasinfection.living_block": "Living Block",
   "block.atlasinfection.hard_living_block": "Hard Living Block",
 

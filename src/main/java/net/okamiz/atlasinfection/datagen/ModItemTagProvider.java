@@ -7,6 +7,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.okamiz.atlasinfection.AtlasInfectionMod;
+import net.okamiz.atlasinfection.block.ModBlocks;
 import net.okamiz.atlasinfection.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
@@ -21,7 +22,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        //tag(ItemTags.AXES)
-        //        .add(ModItems.EXEMPLEITEM);
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.LIVING_PLANKS.get().asItem());
     }
 }

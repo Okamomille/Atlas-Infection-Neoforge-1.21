@@ -2,10 +2,7 @@ package net.okamiz.atlasinfection.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -45,10 +42,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_honeycomb", has(Items.HONEYCOMB))
                 .unlockedBy("has_quartz_block", has(Blocks.QUARTZ_BLOCK))
                 .save(recipeOutput);
-/*
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
-                .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
-                .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(pRecipeOutput);
-         */
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIVING_WOOD.get(), 3)
+                .pattern("LL")
+                .pattern("LL")
+                .define('L', ModBlocks.LIVING_LOG)
+                .unlockedBy("has_living_log", has(ModBlocks.LIVING_LOG.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_LIVING_WOOD.get(), 3)
+                .pattern("LL")
+                .pattern("LL")
+                .define('L', ModBlocks.STRIPPED_LIVING_LOG)
+                .unlockedBy("has_stripped_living_log", has(ModBlocks.STRIPPED_LIVING_LOG.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIVING_PLANKS.get(), 4)
+                .requires(ModBlocks.LIVING_LOG.get())
+                .unlockedBy("has_living_log", has(ModBlocks.LIVING_LOG.get())).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIVING_PLANKS.get(), 4)
+                .requires(ModBlocks.LIVING_WOOD.get())
+                .unlockedBy("has_living_wood", has(ModBlocks.LIVING_WOOD.get())).save(recipeOutput, "atlasinfection:living_planks_from_living_wood");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIVING_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_LIVING_LOG.get())
+                .unlockedBy("has_stripped_living_log", has(ModBlocks.STRIPPED_LIVING_LOG.get())).save(recipeOutput, "atlasinfection:living_planks_from_stripped_living_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIVING_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_LIVING_WOOD.get())
+                .unlockedBy("has_stripped_living_wood", has(ModBlocks.STRIPPED_LIVING_WOOD.get())).save(recipeOutput, "atlasinfection:living_planks_from_stripped_living_wood");
+
     }
 }

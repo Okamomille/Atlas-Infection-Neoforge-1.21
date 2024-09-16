@@ -1,7 +1,13 @@
-// 1.21.1	2024-09-14T16:07:35.0457167	Loot Tables
+// 1.21.1	2024-09-16T15:41:23.691589	Loot Tables
 e19e1fe2293033cf2f69003659efef89d30ace87 data/atlasinfection/loot_table/blocks/atlas_heart.json
 6407cd9acd1ed3d5b2c5d0ada07e1aafbd0fa2d3 data/atlasinfection/loot_table/blocks/hard_living_block.json
 86d0ac4b32737b23f65fadd7250b348214c24b83 data/atlasinfection/loot_table/blocks/living_block.json
+f8de91385a2ae9e4aa158b1288e81af4bce1b2af data/atlasinfection/loot_table/blocks/living_flowers.json
 decbb36289c4b15a005d4df0c4aa44abc40f9004 data/atlasinfection/loot_table/blocks/living_leaves.json
+f384e24675c83d7981c6d7184b4068859387d262 data/atlasinfection/loot_table/blocks/living_log.json
+4465461b0f1c0e8fa78476e8b6e4caffb791f00d data/atlasinfection/loot_table/blocks/living_planks.json
 956dbd0c4e6109207fa884f468847e32a3a1ca0f data/atlasinfection/loot_table/blocks/living_roots.json
+b57401452c9db94ef0728a1cde732563f8fdc959 data/atlasinfection/loot_table/blocks/living_wood.json
 6de78899210e76f19acca4d7127ba4e8c923a3df data/atlasinfection/loot_table/blocks/protected_quartz_block.json
+4953e8e9274beafa1c65691473016d20fda1d108 data/atlasinfection/loot_table/blocks/stripped_living_log.json
+3549815641cc270406535072eb0eba85dac3e506 data/atlasinfection/loot_table/blocks/stripped_living_wood.json
