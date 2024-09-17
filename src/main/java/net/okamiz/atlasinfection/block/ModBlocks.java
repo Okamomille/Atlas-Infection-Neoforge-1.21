@@ -2,10 +2,7 @@ package net.okamiz.atlasinfection.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -52,6 +49,8 @@ public class ModBlocks {
 
     // LIVING PLANTS ----------------------------
 
+    public static final DeferredBlock<Block> LIVING_CARPET = registerBlock("living_carpet",
+            () -> new CarpetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSS_CARPET).sound(SoundType.WART_BLOCK)));
     public static final DeferredBlock<Block> LIVING_ROOTS = registerBlock("living_roots",
             () -> new LivingPlants(BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_ROOTS)));
 

@@ -110,6 +110,15 @@ public class LivingMechanicBlock extends Block {
             }
         }
 
+        if(level.getBlockState(blockpos).is(BlockTags.RAILS) && !level.getBlockState(blockpos).is(ModTags.Blocks.LIVING_BLOCKS)){
+            level.setBlockAndUpdate(blockpos, ModBlocks.LIVING_CARPET.get().defaultBlockState());
+        }
+
+        if(level.getBlockState(blockpos).is(BlockTags.WOOL_CARPETS) || level.getBlockState(blockpos).is(Blocks.MOSS_CARPET)){
+            level.setBlockAndUpdate(blockpos, ModBlocks.LIVING_CARPET.get().defaultBlockState());
+        }
+
+
         if(level.getBlockState(blockpos.above()).is(Blocks.SNOW)){
             level.setBlockAndUpdate(blockpos.above(), Blocks.AIR.defaultBlockState());
         }else if(level.getBlockState(blockpos).is(Blocks.SNOW)){

@@ -31,7 +31,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.BAMBOO)
                 .add(Blocks.BAMBOO_SAPLING)
                 .add(Blocks.TALL_GRASS)
+                .add(Blocks.RAIL)
+                .add(Blocks.ACTIVATOR_RAIL)
+                .add(Blocks.DETECTOR_RAIL)
+                .add(Blocks.POWERED_RAIL)
                 .add(ModBlocks.ATLAS_HEART.get())
+                .add(ModBlocks.LIVING_CARPET.get())
                 .add(ModBlocks.HARD_LIVING_BLOCK.get())
                 .add(ModBlocks.LIVING_ROOTS.get())
                 .add(ModBlocks.LIVING_FLOWERS.get())
@@ -41,7 +46,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LIVING_PLANKS.get())
                 .add(ModBlocks.STRIPPED_LIVING_LOG.get())
                 .add(ModBlocks.STRIPPED_LIVING_WOOD.get())
-                .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get());
+                .add(ModBlocks.PROTECTED_QUARTZ_BLOCK.get())
+        ;
 
         this.tag(ModTags.Blocks.LIVING_BLOCKS)
                 .add(ModBlocks.LIVING_BLOCK.get())
@@ -51,7 +57,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LIVING_WOOD.get())
                 .add(ModBlocks.LIVING_PLANKS.get())
                 .add(ModBlocks.STRIPPED_LIVING_LOG.get())
-                .add(ModBlocks.STRIPPED_LIVING_WOOD.get());
+                .add(ModBlocks.STRIPPED_LIVING_WOOD.get())
+                .add(ModBlocks.LIVING_CARPET.get())
+        ;
 
         this.tag(ModTags.Blocks.IS_MASS_BLOCKS_VERTICAL)
                 .add(Blocks.CACTUS)
@@ -74,7 +82,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.LIVING_BLOCK.get())
-                .add(ModBlocks.HARD_LIVING_BLOCK.get());
+                .add(ModBlocks.HARD_LIVING_BLOCK.get())
+                .add(ModBlocks.LIVING_CARPET.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.LIVING_LOG.get())

@@ -22,7 +22,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.HARD_LIVING_BLOCK);
         blockWithItem(ModBlocks.ATLAS_HEART);
 
-
         logBlock(((RotatedPillarBlock) ModBlocks.LIVING_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.LIVING_WOOD.get()), blockTexture(ModBlocks.LIVING_LOG.get()), blockTexture(ModBlocks.LIVING_LOG.get()));
         logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LIVING_LOG.get()));

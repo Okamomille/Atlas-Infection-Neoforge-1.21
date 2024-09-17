@@ -36,6 +36,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LIVING_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_LIVING_WOOD.get());
         dropSelf(ModBlocks.LIVING_PLANKS.get());
+        dropSelf(ModBlocks.LIVING_CARPET.get());
         dropSelf(ModBlocks.LIVING_FLOWERS.get());
 
         this.add(ModBlocks.LIVING_BLOCK.get(),
