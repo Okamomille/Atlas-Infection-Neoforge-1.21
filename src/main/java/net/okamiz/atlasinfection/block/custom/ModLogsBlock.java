@@ -33,9 +33,7 @@ public class ModLogsBlock extends RotatedPillarBlock {
             if(state.is(ModBlocks.LIVING_WOOD.get())){
                 return ModBlocks.STRIPPED_LIVING_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-
         }
-
         return super.getToolModifiedState(state, context, itemAbility, simulate);
     }
 
@@ -71,7 +69,7 @@ public class ModLogsBlock extends RotatedPillarBlock {
                         level.getBlockState(blockpos).getValue(RotatedPillarBlock.AXIS)));
             }
             else if (!level.getBlockState(blockpos).is(ModTags.Blocks.NON_INFECTABLE_BLOCKS) && !level.getBlockState(blockpos).is(BlockTags.LOGS)
-                    && !level.getBlockState(blockpos).is(BlockTags.LEAVES) && !level.getBlockState(blockpos.above()).is(ModTags.Blocks.IS_MASS_BLOCKS_VERTICAL)
+                    && !level.getBlockState(blockpos).is(BlockTags.LEAVES) && !level.getBlockState(blockpos).is(ModTags.Blocks.IS_MASS_BLOCKS_VERTICAL)
                     && !level.getBlockState(blockpos.above()).is(ModTags.Blocks.LIVING_BLOCKS)) {
                 level.setBlockAndUpdate(blockpos, ModBlocks.LIVING_BLOCK.get().defaultBlockState());
             }

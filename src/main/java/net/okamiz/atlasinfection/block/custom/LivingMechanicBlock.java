@@ -67,7 +67,7 @@ public class LivingMechanicBlock extends Block {
         propagate(blockpos, level, pos, random);
 
         if (!level.getBlockState(blockpos).is(ModTags.Blocks.NON_INFECTABLE_BLOCKS) && !level.getBlockState(blockpos).is(BlockTags.LOGS)
-                && !level.getBlockState(blockpos).is(BlockTags.LEAVES)) {
+                && !level.getBlockState(blockpos).is(BlockTags.LEAVES) && !level.getBlockState(blockpos).isAir()) {
             level.setBlockAndUpdate(blockpos, ModBlocks.LIVING_BLOCK.get().defaultBlockState());
         }
     }
@@ -134,17 +134,21 @@ public class LivingMechanicBlock extends Block {
 
     @Override
     protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
-        if(level.getBlockState(pos.south()).is(ModTags.Blocks.LIVING_BLOCKS) &&
-                level.getBlockState(pos.north()).is(ModTags.Blocks.LIVING_BLOCKS) &&
-                level.getBlockState(pos.east()).is(ModTags.Blocks.LIVING_BLOCKS) &&
-                level.getBlockState(pos.west()).is(ModTags.Blocks.LIVING_BLOCKS) &&
-                level.getBlockState(pos.below()).is(ModTags.Blocks.LIVING_BLOCKS) &&
-                level.getBlockState(pos.above()).is(ModTags.Blocks.LIVING_BLOCKS)){
-            level.setBlock(pos, state.setValue(CAN_PROPAGATE, false), 3);
-        }else{
+        if(level.getBlockState(pos.south()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.south()).isAir()){
+            if(level.getBlockState(pos.north()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.north()).isAir()){
+                if(level.getBlockState(pos.east()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.east()).isAir()){
+                    if(level.getBlockState(pos.west()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.west()).isAir()){
+                        if(level.getBlockState(pos.below()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.below()).isAir()){
+                            if(level.getBlockState(pos.above()).is(ModTags.Blocks.LIVING_BLOCKS) || level.getBlockState(pos.above()).isAir()){
+                                level.setBlock(pos, state.setValue(CAN_PROPAGATE, false), 3);
+                            }
+                        }
+                    }
+                }
+            }
+        } else{
             level.setBlock(pos, state.setValue(CAN_PROPAGATE, true), 3);
         }
-
         return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
     }
 }
